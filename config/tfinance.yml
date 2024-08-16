@@ -1,0 +1,88 @@
+dataset: "tfinance"
+
+GCDGNN: 
+  add_self_loop: false
+  agg: 'mean'
+  batch_size: 1024
+
+  dataset_seed: 560
+  dropout: 0.29257484608369155
+  epochs: 500
+  eval_interval: 1
+  flush_seconds: 60
+  force_reload: false
+  full_neighbors: true
+  hid_dim: 64
+  homo: true
+  lr: 0.005452584200419464 
+  lr_scheduler: false
+  attn_drop: 0 
+  monitor: 'auc_gnn'
+  n_layer: 1
+  no_dev: false
+  norm_feat: true
+  num_trans: 1
+  num_workers: 8
+  optimizer: 'Adam'
+  patience: 20
+  proj: true
+  reduction: 'mean'
+  relation_agg: 'cat'
+  resi: 0.2
+  run_best: false
+  sampled_neighbors: [-1, -1, -1]
+
+  sampling_type: 'in'
+  seed: 1234
+  test_each_epoch: false
+  thres: 0.5
+  threshold_moving: true
+  train_size: 0.4
+  val_size: 0.2
+  weight_decay: 0.0
+  weighted_loss: false
+  
+
+GCDGNN-L: 
+  add_self_loop: false
+  agg: 'mean'
+  batch_size: 1024
+
+  dataset_seed: 717
+  epochs: 500
+  dropout: 0.29257484608369155
+  eval_interval: 1
+  flush_seconds: 60
+  force_reload: false
+  full_neighbors: true
+  hid_dim: 64
+  homo: true
+  lr: 0.005452584200419464 
+  lr_scheduler: false
+
+  monitor: 'auc_gnn'
+  
+  n_layer: 1
+  no_dev: false
+  norm_feat: true
+  num_trans: 1
+  num_workers: 8
+  optimizer: 'Adam'
+  patience: 25
+  proj: true
+  reduction: 'mean'
+  relation_agg: 'cat'
+  resi: 0.2
+  run_best: false
+  sampled_neighbors: [-1, -1, -1]
+
+  sampling_type: 'in'
+  seed: 1234
+  test_each_epoch: false
+  thres: 0.5
+  threshold_moving: true
+  train_size: 0.4
+  val_size: 0.2
+  weight_decay: 0.0
+  weighted_loss: false
+  
